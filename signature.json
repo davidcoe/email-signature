@@ -1,0 +1,28 @@
+{
+  "py/object": "__main__.Signature",
+  "name": "",
+  "title": "",
+  "phone": "",
+  "website_link": "",
+  "website_text": "",
+  "avatar_link": "",
+  "avatar_img": "",
+  "avatar_description": "",
+  "socials": [
+    {
+      "py/object": "__main__.Social",
+      "link": "",
+      "icon": ""
+    },
+    {
+      "py/object": "__main__.Social",
+      "link": "",
+      "icon": ""
+    },
+    {
+      "py/object": "__main__.Social",
+      "link": "",
+      "icon": ""
+    }
+  ]
+}

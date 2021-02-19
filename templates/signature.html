@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Email Signature</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<table
+        style='font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; border: 1px solid #0074D9;border-right: 0 none;border-left: 0 none;padding-top: 5px'>
+    <tbody>
+    <tr>
+        <td style="vertical-align: middle; padding: 0 10px 0 0;">
+            <a href="{{signature.avatar_link}}" style="text-decoration: none;">
+                <img src="{{signature.avatar_img}}"
+                     alt="{{signature.avatar_description}}"
+                     width="120" height="120"
+                     style="vertical-align: middle; border-radius: 50%; opacity: 80%"
+                />
+            </a>
+        </td>
+        <td style="padding: 0">
+            <table>
+                <tbody>
+                <tr>
+                    <td style="font-size: 14px; color: #0074D9">
+                        {{signature.name}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 12px; font-style: italic; padding: 0 0 5px 0;">
+                        {{signature.title}}
+                    </td>
+                </tr>
+                <tr style="font-size: 12px;">
+                    <td>
+                        <span style="color: #0074D9">Mobile</span> {{signature.phone}}
+                    </td>
+                </tr>
+                <tr style="font-size: 12px;">
+                    <td>
+                        <span style="color: #0074D9">Web</span> <a href="{{signature.website_link}}">{{signature.website_text}}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tbody>
+                            <tr>
+                                {% for social in signature.socials %}
+                                <td>
+                                    <a href="{{ social.link }}" style="text-decoration: none">
+                                        <img src="{{ social.icon }}" height="25" width="25" alt="Social media icon for {{social.link}}"/></a>
+                                </td>
+                                {% endfor %}
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tbody>
+</table>
+</body>
+</html>
